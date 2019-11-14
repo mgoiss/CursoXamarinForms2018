@@ -31,11 +31,11 @@ namespace App01_ConsultorCEP
                     if (end != null)
                     {
                         Resultado.Text = string.Format("Resultado do CEP {0}:\n\n" +
-                                                        "Logradouro:   {1}\n" +
-                                                        "Bairro:            {2}\n" +
-                                                        "Localidade:    {3}\n" +
-                                                        "Uf:                  {4}\n" +
-                                                        "IBGE:              {5}\n", tempCep, end.Logradouro, end.Bairro, end.Localidade, end.Uf, end.Ibge).to;
+                                                        "{1} {2}\n" +
+                                                        "{3} {4}\n" +
+                                                        "{5} {6}\n" +
+                                                        "{7} {8}\n" +
+                                                        "{9} {10}\n", tempCep, "Logradouro: ", end.Logradouro, "Bairro: ", end.Bairro, "Localidade: ", end.Localidade, "UF: ", end.Uf, "IBGE: ", end.Ibge);
                     }
                     else
                     {
